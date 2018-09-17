@@ -38,5 +38,18 @@ public class Solution {
                 + chicken1.tryToFly()+ "and "
                 +chicken1.tryToSwim());
 
+        /*
+        * 3a Now how would you model a rooster?
+        * The Class model that was done in previous step  is flexible enough
+        * to have a new type of Animal which makes a different sound.
+        * There is no relation between chicken and Rooster in this case
+        *
+        */
+        Animal rooster = new Bird("Rooster", "Cock-a-doodle-doo",new CantFly(),new CantSwim());
+        System.out.println("I am a "+ rooster.getName()+ " Who "
+                +rooster.getSound()+","
+                + rooster.tryToFly()+ "and "
+                +rooster.tryToSwim());
+
     }
 }
