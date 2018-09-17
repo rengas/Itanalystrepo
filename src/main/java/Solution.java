@@ -50,6 +50,35 @@ public class Solution {
                 +rooster.getSound()+","
                 + rooster.tryToFly()+ "and "
                 +rooster.tryToSwim());
+        /*
+         * 4 a,b,c,d Model a parrot
+         * Our model is flexible enough for parrots which makes different type of sound
+         * As we added sound as property its very flexible for us have new sound
+         * on the fly without changing much code.
+         */
+        Animal parrotlivesWithDog =  new Bird("Parrot", "Woof,Woof",new CanFly(),new CantSwim() );
+        System.out.println("I am a "+ parrotlivesWithDog.getName()+ " Who "
+                +parrotlivesWithDog.getSound()+","
+                + parrotlivesWithDog.tryToFly()+ "and "
+                +parrotlivesWithDog.tryToSwim());
 
+        Animal parrotlivesWithCat =  new Bird("Parrot", "Meow",new CanFly(),new CantSwim() );
+        System.out.println("I am a "+ parrotlivesWithCat.getName()+ " Who "
+                +parrotlivesWithCat.getSound()+","
+                + parrotlivesWithCat.tryToFly()+ "and "
+                +parrotlivesWithCat.tryToSwim());
+
+
+        Animal parrotlivesWithRooster =  new Bird("Parrot", "Cock-a-doodle-doo",new CanFly(),new CantSwim() );
+        System.out.println("I am a "+ parrotlivesWithRooster.getName()+ " Who "
+                +parrotlivesWithRooster.getSound()+","
+                + parrotlivesWithRooster.tryToFly()+ "and "
+                +parrotlivesWithRooster.tryToSwim());
+
+        Animal parrotlivesWithPhone =  new Bird("Parrot", "Ring Ring",new CanFly(),new CantSwim() );
+        System.out.println("I am a "+ parrotlivesWithPhone.getName()+ " Who "
+                +parrotlivesWithPhone.getSound()+","
+                + parrotlivesWithPhone.tryToFly()+ "and "
+                +parrotlivesWithPhone.tryToSwim());
     }
 }
