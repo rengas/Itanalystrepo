@@ -6,11 +6,24 @@ public class Fish extends Animal {
      * new additional properties that is only for fish could be added in
      * future.
      */
-    public Fish(String name){
+     /*
+     * Size,Colour and food are added as new properties.
+     * And fish with ability to joke
+     */
+    private String size;
+    private String colour;
+    private String food;
+
+    public Fish(String name,String size, String colour, String food,Jokes jokes){
         super();
+        this.size=size;
+        this.colour=colour;
+        this.food=food;
         setName(name);
+        setSound("is Mute");
         setSwimingAbility(new CanSwim());
         setFlyingAbility( new CantFly());
+        setJokingAbility(jokes);
     }
 }
 

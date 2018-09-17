@@ -80,5 +80,33 @@ public class Solution {
                 +parrotlivesWithPhone.getSound()+","
                 + parrotlivesWithPhone.tryToFly()+ "and "
                 +parrotlivesWithPhone.tryToSwim());
+
+        Animal Fish = new Fish("Fish","No Size","No colour","Plants",new CantJoke() );
+        System.out.println("I am a "+ Fish.getName()+ " Who "
+                +Fish.getSound()+","
+                + Fish.tryToFly()+ " and "
+                +Fish.tryToSwim());
+
+        /*
+         * Can you specialize the fish as a Shark and as a Clownfish?
+         *
+         */
+
+        Animal Shark = new Fish("Shark","Large","Grey","Fish",new CantJoke() );
+        System.out.println("I am a "+ Fish.getName()+ " Who "
+                +Shark.getSound()+","
+                + Shark.tryToFly()+ ","
+                +Shark.tryToSwim()+","
+                +Shark.tryToJoke());
+
+        Animal ClownFish = new Fish("Clown Fish", "small","Multi color","Plants",new CanJoke());
+        System.out.println("I am a "+ ClownFish.getName()+ " Who "
+                +ClownFish.getSound()+","
+                + ClownFish.tryToFly()+ ","
+                +ClownFish.tryToSwim()+","
+                +ClownFish.tryToJoke());
+
+
+
     }
 }
