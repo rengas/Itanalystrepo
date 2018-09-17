@@ -1,8 +1,10 @@
 public class Bird extends Animal {
-    void fly(){
-        System.out.println("I am flying");
-    }
-    void sing(){
-        System.out.println("I am Singing");
+
+    public Bird(String name,String sound,Flys flys,Swims swims){
+        super();
+        setName(name);
+        setSound(sound);
+        setFlyingAbility(flys);
+        setSwimingAbility(swims);
     }
 }
