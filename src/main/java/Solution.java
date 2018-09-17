@@ -105,7 +105,15 @@ public class Solution {
                 + ClownFish.tryToFly()+ ","
                 +ClownFish.tryToSwim()+","
                 +ClownFish.tryToJoke());
-
+        /*
+        * Dolphins are not exactly fish, yet, they are good swimmers
+         */
+        Animal Dolphin = new Dolphin();
+        System.out.println("I am a "+ Dolphin.getName()+ " Who "
+                +Dolphin.getSound()+","
+                + Dolphin.tryToFly()+ ","
+                +Dolphin.tryToSwim()+","
+                +Dolphin.tryToJoke());
 
 
     }
