@@ -114,7 +114,14 @@ public class Solution {
                 + Dolphin.tryToFly()+ ","
                 +Dolphin.tryToSwim()+","
                 +Dolphin.tryToJoke());
-
+        /**
+         * Model animals behaviour over time
+         */
+        // Start as a caterpillar
+        Animal CaterPillar = new Insect("Caterpillar","is Mute",new CantFly(),new CanWalk() );
+        // transform into butterfly
+        CaterPillar.setName("Butterfly");
+        CaterPillar.setFlyingAbility(new CanFly());
 
     }
 }

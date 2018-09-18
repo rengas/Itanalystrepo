@@ -4,6 +4,7 @@ public class Animal {
     private Flys flyingAbility;
     private Swims swimingAbility;
     private Jokes jokeAbility;
+    private Walks walkAbility;
 
     public void setSound(String sound){
         this.sound =sound;
@@ -30,6 +31,9 @@ public class Animal {
     }
     public void setJokingAbility(Jokes jokeAbility){
         this.jokeAbility=jokeAbility;
+    }
+    public void setWalkAbility(Walks walkAbility){
+        this.walkAbility=walkAbility;
     }
 
     public String tryToFly(){
