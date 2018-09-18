@@ -14,7 +14,6 @@ public class Solution {
         * without much change to previous code.
         * e.g. a flying dog.
         * */
-
         Animal duck = new Bird("Duck","Quack, quack",new CanFly(),new CanSwim());
         System.out.println("I am a "+ duck.getName()+ " Who "
                                     +duck.getSound()+","
@@ -122,6 +121,31 @@ public class Solution {
         // transform into butterfly
         CaterPillar.setName("Butterfly");
         CaterPillar.setFlyingAbility(new CanFly());
+
+        /*
+        * count Animals
+         */
+        Animal[]  animals = new Animal[]{
+                duck,duck1,Dolphin,ClownFish,Shark,Fish,parrotlivesWithPhone,
+                parrotlivesWithRooster,parrotlivesWithCat,parrotlivesWithDog,
+                rooster,chicken1,chicken,duck1,duck};
+
+        int countSwim=0,countFly=0,countWalk=0,countJoke=0;
+        for(int i=0; i<animals.length;i++){
+            if(animals[i].getJokingAbility() instanceof CanJoke)
+                countJoke++;
+            if(animals[i].getSwimingAbility() instanceof CanSwim)
+                countSwim++;
+            if(animals[i].getWalkingAbility() instanceof CanWalk)
+                countWalk++;
+            if(animals[i].getFlyingAbility() instanceof CanFly)
+                countFly++;
+
+        }
+        System.out.println("Can Joke: "+ countJoke+
+                            " Can Swim: "+ countSwim+
+                            " Can Walk: "+ countWalk+
+                            " Can Fly: "+ countFly);
 
     }
 }

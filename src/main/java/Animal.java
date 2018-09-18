@@ -35,7 +35,18 @@ public class Animal {
     public void setWalkAbility(Walks walkAbility){
         this.walkAbility=walkAbility;
     }
-
+    public Swims getSwimingAbility(){
+       return this.swimingAbility;
+    }
+    public Jokes getJokingAbility(){
+        return this.jokeAbility;
+    }
+    public Walks getWalkingAbility(){
+        return this.walkAbility;
+    }
+    public Flys getFlyingAbility(){
+        return this.flyingAbility;
+    }
     public String tryToFly(){
        return this.flyingAbility.fly();
     }
